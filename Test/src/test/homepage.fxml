@@ -9,7 +9,7 @@
 <?import javafx.scene.text.Font?>
 
 
-<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="476.0" prefWidth="792.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1">
+<AnchorPane fx:controller="test.TestMainController" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="476.0" prefWidth="792.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1">
    <children>
       <BorderPane fx:id="homepi_borderPane" layoutX="27.0" layoutY="30.0" prefHeight="421.0" prefWidth="615.0">
          <left>
@@ -25,7 +25,7 @@
             </AnchorPane>
          </left>
       </BorderPane>
-      <Button fx:id="home_btn" layoutX="642.0" layoutY="30.0" mnemonicParsing="false" prefHeight="41.0" prefWidth="108.0" text="홈">
+      <Button onAction="#home_btnClicked" fx:id="home_btn" layoutX="642.0" layoutY="30.0" mnemonicParsing="false" prefHeight="41.0" prefWidth="108.0" text="홈">
          <font>
             <Font size="16.0" />
          </font>
