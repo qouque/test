@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.shape.Circle?>
+<?import javafx.scene.text.Font?>
+
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="476.0" prefWidth="792.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <BorderPane fx:id="homepi_borderPane" layoutX="27.0" layoutY="30.0" prefHeight="421.0" prefWidth="615.0">
+         <left>
+            <AnchorPane prefHeight="421.0" prefWidth="185.0" BorderPane.alignment="CENTER">
+               <children>
+                  <Separator layoutX="179.0" layoutY="8.0" orientation="VERTICAL" prefHeight="406.0" prefWidth="12.0" />
+                  <Circle fx:id="mem_picture" fill="DODGERBLUE" layoutX="93.0" layoutY="82.0" radius="54.0" stroke="BLACK" strokeType="INSIDE" />
+                  <Label fx:id="mem_nickName" alignment="CENTER" layoutX="51.0" layoutY="162.0" prefHeight="29.0" prefWidth="90.0" text="닉네임" />
+                  <Label fx:id="mem_stateMsg" alignment="CENTER" layoutX="17.0" layoutY="211.0" prefHeight="69.0" prefWidth="153.0" text="상태메시지" />
+                  <Label fx:id="homepi_view" alignment="CENTER" layoutX="21.0" layoutY="291.0" prefHeight="28.0" prefWidth="145.0" text="조회수" />
+                  <Label fx:id="homepi_rank" alignment="CENTER" layoutX="44.0" layoutY="346.0" prefHeight="33.0" prefWidth="98.0" text="홈페이지 등급" />
+               </children>
+            </AnchorPane>
+         </left>
+      </BorderPane>
+      <Button fx:id="home_btn" layoutX="642.0" layoutY="30.0" mnemonicParsing="false" prefHeight="41.0" prefWidth="108.0" text="홈">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Button>
+      <Button fx:id="board_btn" layoutX="642.0" layoutY="71.0" mnemonicParsing="false" prefHeight="41.0" prefWidth="108.0" text="게시판">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Button>
+      <Button fx:id="diary_btn" layoutX="642.0" layoutY="112.0" mnemonicParsing="false" prefHeight="41.0" prefWidth="108.0" text="다이어리">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Button>
+      <Button fx:id="picture_btn" layoutX="642.0" layoutY="153.0" mnemonicParsing="false" prefHeight="41.0" prefWidth="108.0" text="사진첩">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Button>
+      <Button fx:id="guest_btn" layoutX="642.0" layoutY="194.0" mnemonicParsing="false" prefHeight="41.0" prefWidth="108.0" text="방명록">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Button>
+      <Button fx:id="setting_btn" layoutX="642.0" layoutY="235.0" mnemonicParsing="false" prefHeight="41.0" prefWidth="108.0" text="꾸미기 / 설정">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>
