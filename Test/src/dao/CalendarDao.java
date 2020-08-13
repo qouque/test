@@ -8,15 +8,15 @@ import org.apache.log4j.Logger;
 import com.ibatis.sqlmap.client.SqlMapClient;
 
 import controller.calDateVO;
-import theBug.util.IbatisUtil;
-import theBug.vo.CalendarVO;
+import util.SqlMapClientFactory;
+import vo.CalendarVO;
 
 public class CalendarDao implements ICalendarDao {
 	static Logger logger = Logger.getLogger(CalendarDao.class);
 	private static CalendarDao caldao;
 	private SqlMapClient smc;
 	public CalendarDao() {
-		smc = IbatisUtil.getSqlMapClient();
+		smc = SqlMapClientFactory.getInstance();
 	}
 	public static CalendarDao getInstance() {
 		if(caldao==null)

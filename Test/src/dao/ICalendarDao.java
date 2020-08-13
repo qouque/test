@@ -4,7 +4,7 @@ import java.util.List;
 import java.util.Map;
 
 import controller.calDateVO;
-import theBug.vo.CalendarVO;
+import vo.CalendarVO;
 
 public interface ICalendarDao {
 	/**

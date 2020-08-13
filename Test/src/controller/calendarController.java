@@ -27,7 +27,10 @@ import javafx.scene.layout.HBox;
 import javafx.scene.layout.VBox;
 import javafx.scene.paint.Color;
 import javafx.stage.Stage;
-import theBug.vo.CalendarVO;
+import service.CalendarService;
+import service.ICalendarService;
+import util.Session;
+import vo.CalendarVO;
 	/**
 	 * 캘린더를 출력하는 클래스
 	 * <pre>
@@ -178,7 +181,7 @@ public class calendarController {
 
     @FXML
     void initialize() {
-    	if(Main.curEmp.getDept_id()!=20) {
+    	if(Session.session.getMem_id()!=20) {
     		btnAdd.setDisable(true);
     	}
     	hboxList = new HBox[] {

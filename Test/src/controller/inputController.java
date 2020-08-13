@@ -15,8 +15,8 @@ import javafx.scene.control.Alert.AlertType;
 import javafx.stage.Stage;
 import service.CalendarService;
 import service.ICalendarService;
-import theBug.main.Main;
-import theBug.vo.CalendarVO;
+import util.Session;
+import vo.CalendarVO;
 	/**
 	 * 캘린더 일정을 추가하는 클래스
 	 * <pre>
@@ -63,7 +63,7 @@ public class inputController {
     	calVo.setCal_edate(edate);
     	calVo.setCal_sdate(sdate);
     	calVo.setCal_title(title);
-    	calVo.setEmp_id(Main.curEmp.getEmp_id()); //지금로그인한 사람의 사원번호
+    	calVo.setEmp_id(Session.session.getMem_id()); //지금로그인한 사람의 사원번호
     	
     	service.insertCal(calVo); 
     	

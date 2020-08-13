@@ -5,7 +5,7 @@ import java.util.Map;
 
 import controller.calDateVO;
 import dao.CalendarDao;
-import theBug.vo.CalendarVO;
+import vo.CalendarVO;
 
 public class CalendarService implements ICalendarService{
 	private static CalendarService calService;

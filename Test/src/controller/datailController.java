@@ -19,7 +19,8 @@ import javafx.scene.input.MouseEvent;
 import javafx.stage.Stage;
 import service.CalendarService;
 import service.ICalendarService;
-import theBug.vo.CalendarVO;
+import util.Session;
+import vo.CalendarVO;
 	/**
 	 * 캘린더의 특정 날짜를 클릭했을 때 세부사항을 출력해주는 클래스
 	 * <pre>
@@ -77,7 +78,7 @@ public class datailController {
     		calVo.setCal_conn(txtareacont.getText());
         	calVo.setCal_edate(clickDate);
         	calVo.setCal_sdate(clickDate);
-        	calVo.setEmp_id(Main.curEmp.getEmp_id());
+        	calVo.setEmp_id(Session.session.getMem_id());
         	
         	service.insertCal(calVo); 
     	}else {
@@ -114,7 +115,7 @@ public class datailController {
     
     @FXML
     void initialize() throws IOException {
-    	if(Main.curEmp.getDept_id()!=20) {
+    	if(Session.session.getMem_id()!=20) {
     		lblDel.setDisable(true);
     		btnUpdate.setDisable(true);
     		btnComplete.setDisable(true);
