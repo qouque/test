@@ -5,8 +5,6 @@
 <?import javafx.scene.control.Label?>
 <?import javafx.scene.control.TextArea?>
 <?import javafx.scene.control.TextField?>
-<?import javafx.scene.image.Image?>
-<?import javafx.scene.image.ImageView?>
 <?import javafx.scene.layout.BorderPane?>
 <?import javafx.scene.layout.HBox?>
 <?import javafx.scene.layout.VBox?>
@@ -86,17 +84,6 @@
       </VBox>
    </center>
    <bottom>
-      <HBox prefHeight="31.0" prefWidth="500.0" style="-fx-background-color: #0079c4;" BorderPane.alignment="CENTER">
-         <children>
-            <ImageView fitHeight="90.0" fitWidth="109.0" pickOnBounds="true" preserveRatio="true">
-               <image>
-                  <Image url="@../../image/logo.png" />
-               </image>
-               <HBox.margin>
-                  <Insets left="7.0" top="2.0" />
-               </HBox.margin>
-            </ImageView>
-         </children>
-      </HBox>
+      <HBox prefHeight="31.0" prefWidth="500.0" style="-fx-background-color: #0079c4;" BorderPane.alignment="CENTER" />
    </bottom>
 </BorderPane>
