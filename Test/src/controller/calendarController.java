@@ -59,7 +59,8 @@ public class calendarController {
 	public String getClickDate() {
 		return clickDate;
 	}
-
+	
+	
 	Label[] lableList;
 	HBox[] hboxList;
     @FXML
